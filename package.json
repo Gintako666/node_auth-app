@@ -5,7 +5,8 @@
   "main": "src/index.js",
   "scripts": {
     "init": "mate-scripts init",
-    "start": "mate-scripts start",
+    "start": "nodemon src/index.js",
+    "refresh": "node src/setup.js",
     "lint": "mate-scripts lint",
     "test:only": "mate-scripts test",
     "update": "mate-scripts update",
@@ -16,7 +17,7 @@
   "license": "GPL-3.0",
   "devDependencies": {
     "@mate-academy/eslint-config": "*",
-    "@mate-academy/scripts": "^0.9.7",
+    "@mate-academy/scripts": "^1.2.8",
     "eslint": "^5.16.0",
     "eslint-plugin-jest": "^22.4.1",
     "eslint-plugin-node": "^8.0.1",
@@ -24,5 +25,19 @@
   },
   "mateAcademy": {
     "projectType": "javascript"
+  },
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-validator": "^6.15.0",
+    "jsonwebtoken": "^9.0.0",
+    "nodemailer": "^6.9.1",
+    "pg": "^8.9.0",
+    "pg-hstore": "^2.3.4",
+    "sequelize": "^6.29.0",
+    "uuid": "^9.0.0"
   }
 }
